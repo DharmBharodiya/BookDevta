@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookDevta</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="contact.js"></script>
+    <link rel="shortcut icon" href="images/burger.png" type="image/x-icon">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <img src="images/close.png" id="close" onclick="closeMenu()">
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="book.html">Books</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact2.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="top-container">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="BookDevta"></a>
+        </div>
+        <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="book.html">Books</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact2.html">Contact</a></li>
+                </ul>
+        </div>
+        <div class="res-icons">
+            <img src="images/burger.png" id="burger" onclick="openMenu()">
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+          <form action="https://formspree.io/f/mleanbdy" method="POST" id="my-form">
+      
+            <div class="form-group">
+              <label for="firstName"> First Name</label>
+              <input type="text" id="firstName" name="firstName" autocomplete="nope">
+            </div>
+      
+            <div class="form-group">
+              <label for="latsName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" autocomplete="nope">
+            </div>
+      
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="nope">
+            </div>
+      
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" cols="30" rows="8" autocomplete="off"></textarea>
+            </div>
+      
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div id="status"></div>
+      </section>
+
+    <script>
+        var overlay = document.getElementById("overlay");
+
+        function openMenu(){
+            overlay.style.display = "block";
+        }
+
+        function closeMenu(){
+            overlay.style.display = "none";
+        }
+    </script>
+</body>
+</html>

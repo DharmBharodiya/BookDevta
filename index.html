@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookDevta</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="images/burger.png" type="image/x-icon">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <img src="images/close.png" id="close" onclick="closeMenu()">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="book.html">Books</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact2.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="top-container">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="BookDevta"></a>
+        </div>
+        <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="book.html">Books</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact2.html">Contact</a></li>
+                </ul>
+        </div>
+        <div class="res-icons">
+            <img src="images/burger.png" id="burger" onclick="openMenu()">
+        </div>
+    </div>
+
+    <section class="main-section">
+        <div class="main-text">
+            <h1>Need any book urgently, don’t panic <br>
+               <span class="devta"><a href="#">BookDevta </a></span> has covered you <span class="wink"><img src="images/wink.png" alt=""></span></h1>
+        </div>
+        <div class="button">
+            <!-- <button class="btn"><h1>Get Books Now</h1></button> -->
+            <button class="btn">Get Books Now</button>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; BookDevta 2021</p>
+        </div>
+    </section>
+<!-- 
+    <section class="newsec">
+        <h1>Hello world</h1>
+    </section> -->
+
+    <script>
+        var overlay = document.getElementById("overlay");
+
+        function openMenu(){
+            overlay.style.display = "block";
+        }
+
+        function closeMenu(){
+            overlay.style.display = "none";
+        }
+    </script>
+</body>
+</html>

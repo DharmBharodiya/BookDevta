@@ -1,0 +1,63 @@
+body{
+    font-size: 16px;
+    overflow: hidden;
+    /* height: 100vh; */
+}
+
+.main-sec{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding: 0 3em;
+}
+.main-sec .contain-about {
+    position: absolute;
+    top: 3em;
+}
+
+/* .main-sec .heading{
+    /* position: absolute; 
+    /* top: 5em; 
+} */
+.main-sec .heading h2{
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #6B6D94;
+}
+
+.main-sec .about{
+    padding: 2em 4em;
+}
+
+.main-sec .about p {
+    padding: 0 4em;
+    font-size:  30px;
+}
+
+.main-sec .about p .text{
+    font-weight: bold;
+}
+
+.main-sec .about p .smile img{
+    width: 32px;
+    height: 32px;
+    vertical-align: text-bottom;
+}
+
+@media only screen and (max-width: 500px){
+    body{
+        font-size: 14px;
+        overflow: scroll;
+    }
+
+    .main-sec .about{
+        padding: 0em 1em;
+    }
+
+    .main-sec .about p{
+        padding: 0 1em;
+        font-size: 25px;
+    }
+}
+
+
