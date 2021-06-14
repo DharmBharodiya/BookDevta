@@ -51,16 +51,16 @@ body{
 }
 
 
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 600px){
     body{
         font-size: 12px;
     }
     .main-sec .about {
-        padding: 0 1em;
+        padding: 0;
     }
     .main-sec p{
         font-size: 25px;
-        padding: 0 1em;
+        padding: 0;
     }
     .main-sec small {
         margin: 0;
@@ -84,6 +84,5 @@ body{
         font-size: 25px;
     }
 }
-
 
 
