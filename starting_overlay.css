@@ -9,7 +9,7 @@
     width: 100%;
     height: 100%;
     background: rgba(25, 25, 25, 1);
-    position: absolute;
+    position: fixed;
     z-index: 100;
     display: flex;
     justify-content: center;
@@ -30,7 +30,7 @@
     transition: all 1s ease;
 }
 
-#start p{ /*25 characters*/
+.line-1{ /*25 characters*/
     color: white;
     /* background: tomato; */
     width: 15em;
@@ -44,11 +44,36 @@
     padding: 2px;
     box-sizing: content-box;
     overflow: hidden;
+    user-select: none;
+}
+
+#start .made{
+    display: block;
+    position: fixed;
+    bottom: 10%;
+    color: rgba(98, 98, 98, 0.5);
+    padding: 10px;
+    font-size: 1em;
+}
+.sparkle{
+    box-sizing: content-box;
+    width: 1em;
+    vertical-align: text-bottom;
+    padding-right: 5px;
+}
+
+@keyframes sparkle{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 .animation{
-    animation: typeWriter 4s steps(25) 1s 1 normal both,
-               blinkCursor 500ms steps(25) infinite normal;
+    animation: typeWriter 4s steps(28) 1s 1 normal both,
+               blinkCursor 500ms steps(28) infinite normal;
 }
 
 @keyframes typeWriter {
@@ -74,7 +99,7 @@
     #start{
         font-size: 12px;
     }
-    #start p{ 
+    .line-1{ 
         
         font-size: 3em;
         font-family: "Roboto Mono";
@@ -94,7 +119,7 @@
     #start{
         font-size: 10px;
     }
-    #start p{ 
+    .line-1{ 
         
         font-size: 2.5em;
         font-family: "Roboto Mono";
@@ -107,12 +132,16 @@
         overflow: hidden;
     }
 
+    #start .made{
+        font-size: 1.3em;
+    }
+
 }
 @media only screen and (max-width: 400px){
     #start{
         font-size: 10px;
     }
-    #start p{ 
+    .line-1{ 
         
         font-size: 2em;
         font-family: "Roboto Mono";
@@ -125,5 +154,11 @@
         overflow: hidden;
     }
 
+}
+
+
+::selection{
+    background: tomato;
+    color: white;
 }
 
