@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookDevta</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="starting_overlay.css">
     <link rel="shortcut icon" href="images/burger.png" type="image/x-icon">
 </head>
 <body>
+    <div id="start">
+        <p class="line-1 animation">Hey! Welcome to BookDevta</p>
+    </div>
+
     <div class="container">
         <div class="overlay" id="overlay">
             <img src="images/close.png" id="close" onclick="closeMenu()">
@@ -66,6 +71,14 @@
         function closeMenu(){
             overlay.style.display = "none";
         }
+
+        const start = document.getElementById('start');
+
+        document.addEventListener('DOMContentLoaded', (e) => {
+            setTimeout( () => {
+                start.classList.add('display-none');
+            }, 6000)
+        })
     </script>
 </body>
 </html>
